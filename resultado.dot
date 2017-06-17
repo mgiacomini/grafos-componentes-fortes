@@ -1,4 +1,11 @@
 strict digraph resultado_exemplo {
+  5 -> 1;
+  6 -> 2;
+  7 -> 3;
+  1 -> 4;
+  6 -> 5;
+  7 -> 6;
+  2 -> 7;
   subgraph cluster1 {
     1;
   }
@@ -6,18 +13,10 @@ strict digraph resultado_exemplo {
     5;
   }
   subgraph cluster3 {
-    2;
-  }
-  subgraph cluster4 {
-    3;
-  }
-  subgraph cluster5 {
     6;
-  }
-  subgraph cluster6 {
+    2;
     7;
-  }
-  subgraph cluster7 {
-    4;
+    7;
+    6;
   }
 }

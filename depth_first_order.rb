@@ -15,6 +15,7 @@ class DepthFirstOrder
   private
   def dfs(node)
     @visited << node
+
     node.adjacents.each do |adj_node|
       dfs(adj_node) unless @visited.include?(adj_node)
     end

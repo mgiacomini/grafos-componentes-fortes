@@ -6,7 +6,7 @@ class Node
   end
 
   def adjacents
-    graph.edges.select{|e| e.from == self}.map(&:to)
+    graph.edges.select{|e| e.from== self}.map(&:to)
   end
 
   def to_s

@@ -8,8 +8,15 @@ class Graph
   end
 
   def add_node(node)
-    nodes << node
-    node.graph = self
+    if nodes.any?{|n| n.name == node.name}
+      node = nodes.find{|n| n.name == node.name}
+    else
+      nodes << node
+      node.graph = self
+    end
+
+    node
+
   end
 
   def add_edge(from, to)

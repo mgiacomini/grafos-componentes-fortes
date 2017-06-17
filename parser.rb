@@ -66,11 +66,12 @@ class DotParser
 
   def add_node(node)
     n = Node.new(node)
-    unless @nodes.include? node
-      @graph_builder.add_node(n)
-      @nodes << node
-    end
-    n
+    # unless @nodes.include? node
+    # unless @graph_builder.nodes.include? node
+    @graph_builder.add_node(n)
+      # @nodes << node
+    # else
+    # end
   end
 
   def add_edge(a, b)
