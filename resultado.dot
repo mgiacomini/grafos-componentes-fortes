@@ -1,0 +1,23 @@
+strict digraph resultado_exemplo {
+  subgraph cluster1 {
+    1;
+  }
+  subgraph cluster2 {
+    5;
+  }
+  subgraph cluster3 {
+    2;
+  }
+  subgraph cluster4 {
+    3;
+  }
+  subgraph cluster5 {
+    6;
+  }
+  subgraph cluster6 {
+    7;
+  }
+  subgraph cluster7 {
+    4;
+  }
+}
