@@ -11,9 +11,9 @@ class App
     #puts @parser.inspect
     strong_components = StrongComponents.new(parser).strong_components
 
-    #strong_components.each do |key, component|
+    # strong_components.each do |key, component|
     #  puts component
-    #end
+    # end
 
     writer = DotWriter.new parser, strong_components
     writer.to_dot 'resultado.dot'
