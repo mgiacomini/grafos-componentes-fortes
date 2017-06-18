@@ -41,7 +41,7 @@ class DotParser
   def initialize(graph_builder)
     @graph_builder = graph_builder
     @nodes = []
-    @edges = Hash.new
+    @edges = []
   end
 
   def parse(dotfile)
@@ -60,8 +60,9 @@ class DotParser
   def edge_from_string(line)
     parent = add_node(line[0].strip)
     child = add_node(line[1].strip.tr(';', ''))
-    edge = {parent => child}
-    @edges = @edges.merge(edge)
+
+    edge = [parent, child]
+    @edges << edge
   end
 
   def add_node(node)
