@@ -7,15 +7,11 @@ require_relative 'parser'
 class App
   def self.run(dotfile)
     @graph = Graph.new
+    @graph2 = Graph.new
     parser = DotParser.parse dotfile, @graph
-    #puts @parser.inspect
+    original = DotParser.parse dotfile, @graph2
     strong_components = StrongComponents.new(parser).strong_components
-
-    # strong_components.each do |key, component|
-    #  puts component
-    # end
-
-    writer = DotWriter.new parser, strong_components
+    writer = DotWriter.new original, strong_components
     writer.to_dot 'resultado.dot'
   end
 end
