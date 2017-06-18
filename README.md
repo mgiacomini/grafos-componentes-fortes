@@ -1,15 +1,19 @@
-# Strong Components (Digraph)
+# Trabalho 3 - componentes fortes
 
-This implementation uses the Kosaraju's algorithm.
+A implementação usa o algoritimo de Kosaraju
 
-Definition: Vertices v and w are considered to be strongly connected if
-there is a directed path from v to w **and** a directed path from w to v.
+Definição: Vertices v and w são considerados fortementes conectados se
+existe um caminho direto de v para w **e** um caminho direto de w para v.
 
-![image](http://f.cl.ly/items/3u153x2i1Y3S1h2j3H1r/strong_components.png)
+Conectividade forte é considerado uma realção de equivalencia:
+* v é fortemente conectado a v.
+* se v é fortemente conectado para w, entao w é fortemente conectado em v.
+* se v é fortemente conectado para w, e w para x, entao v é é fortemente conectado para x.
 
-Strong connectivity is an equivalence relation:
-* v is strongly connected to v.
-* if v is strongly connected to w, then w is strongly connected to v.
-* if v is strongly connected to w, and w to x, then v is strongly connected to x.
+Grafo transposto: componentes fortes em *G* são os mesmos em *Gr (transposto)*
 
-Reverse graph: Strong components in *G* are the same as in in *Gr (reverse)*
+
+## Execução
+Basta executar o executavel 'componentes-fortes' com o arquivo dot.
+Por exemplo: ./componentes-fortes sample.dot
+O resultado estará no arquivo resultado.dot
