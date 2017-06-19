@@ -10,7 +10,7 @@ Conectividade forte é considerado uma realção de equivalencia:
 * se v é fortemente conectado para w, entao w é fortemente conectado em v.
 * se v é fortemente conectado para w, e w para x, entao v é é fortemente conectado para x.
 
-Grafo transposto: componentes fortes em *G* são os mesmos em *Gr (transposto)*
+Grafo transposto: Inverter direção dos arcos. Componentes fortes em *G* são os mesmos em *Gr (transposto)*
 
 
 ## implementação
