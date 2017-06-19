@@ -23,6 +23,6 @@ Essa segunda busca gera os componentes fortes que depois são impressos no arqui
 
 
 ## Execução
-Basta executar o executavel 'componentes-fortes' com o arquivo dot.
-Por exemplo: ./componentes-fortes sample.dot
+Basta executar o executavel 'fortes' com o arquivo dot.
+Por exemplo: ./fortes sample.dot
 O resultado estará no arquivo resultado.dot
