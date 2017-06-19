@@ -15,11 +15,11 @@ Grafo transposto: componentes fortes em *G* são os mesmos em *Gr (transposto)*
 
 ## implementação
 
-O parser utilizado foi o mesmo do segundo trabalho com algumas modificacoes.
-Ao executar, ele armazena o grafo original e o transposto em variaveis.
-Após fazer o parse do grafo, é executado uma busca em profundidade no grafo transposto, em pós ordem.
-Para cada nodo da busca não visitado executamos uma recursão para visitar os nodos adjacentes.
-Durante a recursão os componentes fortes são salvos em uma variavel e usada como argumento para escrever o arquivo de resultado.
+	O parser utilizado foi o mesmo do segundo trabalho com algumas modificacoes.
+	Ao executar, ele armazena o grafo original e seu transposto em variaveis.
+	É executado uma busca em profundidade no grafo transposto, empilhando os vértices em pós ordem.
+	Então, é feita uma busca em profundidade no grafo original, na ordem em que os vértices da busca anterior foram empilhados. 
+	Essa segunda busca gera os componentes fortes que depois são impressos no arquivo resultado.dot
 
 
 ## Execução
