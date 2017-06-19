@@ -13,13 +13,13 @@ Conectividade forte é considerado uma realção de equivalencia:
 Grafo transposto: Inverter direção dos arcos. Componentes fortes em *G* são os mesmos em *Gr (transposto)*
 
 
-## implementação
+## Implementação
 
-	O parser utilizado foi o mesmo do segundo trabalho com algumas modificacoes.
-	Ao executar, ele armazena o grafo original e seu transposto em variaveis.
-	É executado uma busca em profundidade no grafo transposto, empilhando os vértices em pós ordem.
-	Então, é feita uma busca em profundidade no grafo original, na ordem em que os vértices da busca anterior foram empilhados. 
-	Essa segunda busca gera os componentes fortes que depois são impressos no arquivo resultado.dot
+O parser utilizado foi o mesmo do segundo trabalho com algumas modificacoes.
+Ao executar, ele armazena o grafo original e seu transposto em variaveis.
+É executado uma busca em profundidade no grafo transposto, empilhando os vértices em pós ordem.
+Então, é feita uma busca em profundidade no grafo original, na ordem em que os vértices da busca anterior foram empilhados. 
+Essa segunda busca gera os componentes fortes que depois são impressos no arquivo resultado.dot
 
 
 ## Execução
